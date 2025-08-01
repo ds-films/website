@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang='{"lt": "Kontaktai - Dominicphotofficial Films", "en": "Contacts - Dominicphotofficial Films", "ru": "Контакты - Dominicphotofficial Фильмы"}'>Kontaktai - Dominicphotofficial Films</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo-dshefilms.png" type="image/png">
+    <link rel="preload" href="assets/fonts/JosefinSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/JosefinSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Jost-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/Jost-Bold.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo-text">Dominicphotofficial Films</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-lang='{"lt": "Pagrindinis", "en": "Home", "ru": "Главная"}'>Pagrindinis</a></li>
+                    <li><a href="films.html" data-lang='{"lt": "Filmai", "en": "Films", "ru": "Фильмы"}'>Filmai</a></li>
+                    <li><a href="contacts.html" data-lang='{"lt": "Kontaktai", "en": "Contacts", "ru": "Контакты"}'>Kontaktai</a></li>
+                    <li><a href="privatumo-politika.html" data-lang='{"lt": "Privatumo politika", "en": "Privacy Policy", "ru": "Политика конфиденциальности"}'>Privatumo politika</a></li>
+                </ul>
+            </nav>
+            <div class="lang-switcher">
+                <svg class="lang-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v-0.07zm0-5.93V9.07l-4.75-2.92C5.07 7.74 4 9.77 4 12s1.07 4.26 2.25 5.85L11 14v-0.07zm8.75-2.92c.57-1.12.87-2.34.87-3.58 0-4.14-3.36-7.5-7.5-7.5-1.24 0-2.46.3-3.58.87L11 9.07V14l4.75 2.92c1.12-.57 2.34-.87 3.58-.87 4.14 0 7.5-3.36 7.5-7.5zm-5.46-4.54L11 5.07V4c3.95.49 7 3.85 7 7.93s-3.05 7.44-7 7.93V19c3.95-.49 7-3.85 7-7.93S19.46 3.07 15.29 2.07z"/></svg>
+                <div class="lang-dropdown">
+                    <a href="#" data-lang-code="lt">Lietuvių</a>
+                    <a href="#" data-lang-code="en">English</a>
+                    <a href="#" data-lang-code="ru">Русский</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <h1 class="section-title" data-lang='{"lt": "Susisiekite su mumis", "en": "Contact Us", "ru": "Свяжитесь с нами"}'>Susisiekite su mumis</h1>
+            <div class="contact-form">
+                <!--
+                    Важное примечание: Для работы формы обратной связи на GitHub Pages
+                    Вам понадобится использовать сторонний сервис, так как GitHub Pages
+                    не поддерживает серверные скрипты (PHP, Node.js и т.д.).
+                    Популярные варианты:
+                    1. Formspree.io (самый простой, до 50 отправок в месяц бесплатно)
+                    2. Netlify Forms (если вы хоститесь на Netlify)
+                    3. Getform.io
+                    4. StaticForms.xyz
+                    
+                    Вам нужно будет заменить 'YOUR_FORMSPREE_URL' на URL, который Formspree
+                    предоставит вам после настройки формы.
+                -->
+                <form action="https://formspree.io/f/your_formspree_url" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-lang='{"lt": "Jūsų vardas:", "en": "Your Name:", "ru": "Ваше имя:"}'>Jūsų vardas:</label>
+                        <input type="text" id="name" name="name" data-placeholder-lang='{"lt": "Įveskite savo vardą", "en": "Enter your name", "ru": "Введите ваше имя"}' required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-lang='{"lt": "Jūsų el. paštas:", "en": "Your Email:", "ru": "Ваш email:"}'>Jūsų el. paštas:</label>
+                        <input type="email" id="email" name="_replyto" data-placeholder-lang='{"lt": "Įveskite savo el. paštą", "en": "Enter your email", "ru": "Введите ваш email"}' required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-lang='{"lt": "Jūsų žinutė:", "en": "Your Message:", "ru": "Ваше сообщение:"}'>Jūsų žinutė:</label>
+                        <textarea id="message" name="message" data-placeholder-lang='{"lt": "Įveskite savo žinutę", "en": "Enter your message", "ru": "Введите ваше сообщение"}' required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" data-lang='{"lt": "Siųsti žinutę", "en": "Send Message", "ru": "Отправить сообщение"}'>Siųsti žinutę</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Dominicphotofficial Films. <span data-lang='{"lt": "Visos teisės saugomos.", "en": "All rights reserved.", "ru": "Все права защищены."}'>Visos teisės saugomos.</span></p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
